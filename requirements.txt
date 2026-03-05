@@ -1,1 +1,4 @@
-
+Java JD
+Apache Tomcat
+MySQL
+IDE de desenvolvimento (Eclipse ou IntelliJ)
