@@ -1,4 +1,4 @@
-##novo_registro.jsp
+##novo_registo.jsp
 Purpose: The Registration Page. It allows new users to create an account by providing a username, email, and password.
 
 <!DOCTYPE html>
