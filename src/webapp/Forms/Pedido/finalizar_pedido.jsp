@@ -1,14 +1,5 @@
 ##finalizar_pedido.jsp 
 Purpose: This file contains the logic to convert the session-based cart into permanent database rows. 
-While currently commented out for maintenance, the logic follows a Master-Detail pattern.
-
-How the Transaction Works:
-To ensure data integrity, the process follows these four steps:
-
-(1) Insert Order (Master): A row is created in the Pedidos table with the date and total.
-(2) Retrieve ID: The system retrieves the uniquely generated pedido_id using Statement.RETURN_GENERATED_KEYS.
-(3) Insert Items (Detail): For every item in the cart, a row is created in ItensPedido, linked back to the pedido_id retrieved in step 2.
-(4) Session Cleanup: The cart is wiped from the session using session.removeAttribute("carrinho").
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.sql.*, java.util.*" %>
